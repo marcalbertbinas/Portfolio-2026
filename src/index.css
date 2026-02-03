@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html {
+    background-color: #fcfcfc; /* Light Mode Body */
+    color-scheme: light;
+  }
+  
+  html.dark {
+    background-color: #080808; /* Dark Mode Body - Exactly same as App.jsx */
+    color-scheme: dark;
+  }
+
+  body {
+    /* Ensure the body doesn't have its own white background overriding things */
+    background-color: transparent; 
+    transition: background-color 0.3s ease;
+  }
+}
