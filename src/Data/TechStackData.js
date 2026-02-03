@@ -9,19 +9,19 @@ import tailwindLogo from '../assets/aboutimgs/tailwind.png';
 import viteLogo from '../assets/aboutimgs/vite.png';
 
 // --- BACKEND --- (Check if these have spaces in the actual filenames!)
-import expressLogo from '../assets/aboutimgs/Express Js.png'; 
-import supabaseLogo from '../assets/aboutimgs/Supabase Icon.png';
+import expressLogo from '../assets/aboutimgs/express.png'; 
+import supabaseLogo from '../assets/aboutimgs/supabase.png';
 import nodeLogo from '../assets/aboutimgs/node.png';
 
 // --- DESIGN ---
 import psLogo from '../assets/aboutimgs/ps.png';
 import aiLogo from '../assets/aboutimgs/illustrator.png';
-import mayaLogo from '../assets/aboutimgs/Autodesk Maya.png';
+import mayaLogo from '../assets/aboutimgs/maya.png';
 
 // --- DEV TOOLS ---
-import gitLogo from '../assets/aboutimgs/Git.png';
+import gitLogo from '../assets/aboutimgs/git.png';
 import githubLogo from '../assets/aboutimgs/github.png';
-import vscodeLogo from '../assets/aboutimgs/Visual Studio Code.png';
+import vscodeLogo from '../assets/aboutimgs/vscode.png';
 
 export const frontend = [
   { name: 'HTML5', img: htmlLogo, desc: 'Semantic web structures.' },
