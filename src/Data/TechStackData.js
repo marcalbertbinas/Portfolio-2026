@@ -1,26 +1,27 @@
 // src/data/TechData.js
-// --- FRONTEND ---
-import htmlLogo from '../assets/AboutImgs/html.png';
-import cssLogo from '../assets/AboutImgs/css-3.png';
-import jsLogo from '../assets/AboutImgs/js.png';
-import reactLogo from '../assets/AboutImgs/atom.png';
-import tailwindLogo from '../assets/AboutImgs/tailwind.png';
-import viteLogo from '../assets/AboutImgs/vite.png';
 
-// --- BACKEND ---
-import expressLogo from '../assets/AboutImgs/Express Js.png';
-import supabaseLogo from '../assets/AboutImgs/Supabase Icon.png';
-import nodeLogo from '../assets/AboutImgs/node.png';
+// --- FRONTEND ---
+import htmlLogo from '../assets/aboutimgs/html.png';
+import cssLogo from '../assets/aboutimgs/css-3.png';
+import jsLogo from '../assets/aboutimgs/js.png';
+import reactLogo from '../assets/aboutimgs/atom.png';
+import tailwindLogo from '../assets/aboutimgs/tailwind.png';
+import viteLogo from '../assets/aboutimgs/vite.png';
+
+// --- BACKEND --- (Check if these have spaces in the actual filenames!)
+import expressLogo from '../assets/aboutimgs/Express Js.png'; 
+import supabaseLogo from '../assets/aboutimgs/Supabase Icon.png';
+import nodeLogo from '../assets/aboutimgs/node.png';
 
 // --- DESIGN ---
-import psLogo from '../assets/AboutImgs/ps.png';
-import aiLogo from '../assets/AboutImgs/illustrator.png';
-import mayaLogo from '../assets/AboutImgs/Autodesk Maya.png';
+import psLogo from '../assets/aboutimgs/ps.png';
+import aiLogo from '../assets/aboutimgs/illustrator.png';
+import mayaLogo from '../assets/aboutimgs/Autodesk Maya.png';
 
 // --- DEV TOOLS ---
-import gitLogo from '../assets/AboutImgs/Git.png';
-import githubLogo from '../assets/AboutImgs/github.png';
-import vscodeLogo from '../assets/AboutImgs/Visual Studio Code.png';
+import gitLogo from '../assets/aboutimgs/Git.png';
+import githubLogo from '../assets/aboutimgs/github.png';
+import vscodeLogo from '../assets/aboutimgs/Visual Studio Code.png';
 
 export const frontend = [
   { name: 'HTML5', img: htmlLogo, desc: 'Semantic web structures.' },
