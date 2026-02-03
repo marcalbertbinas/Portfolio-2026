@@ -5,7 +5,7 @@ import About from './components/About';
 import TechStack from './Pages/TechStack';
 import { frontend,design, backend, devTools } from './Data/TechStackData';
 import {projects} from './Data/ProjectsData'
-import info from './assets/aboutImgs/info.png';
+import info from './assets/aboutimgs/info.png';
 
 function App() {
   // Added dark:bg-[#111111] and dark:border-white/5
