@@ -1,8 +1,11 @@
 import React from 'react'
 import {projects} from '../Data/ProjectsData'
+import {useState} from 'react'
 import {Link} from 'react-router-dom'
+import PopupModal from '../components/PopupModal'
 
 function Projects() {
+  const [selectedProject, setSelectedProject] = useState (null);
   return (
     <div className="min-h-screen bg-[#fcfcfc] dark:bg-[#080808] py-12 px-6 transition-colors duration-300">
       <div className="max-w-5xl mx-auto">
@@ -16,12 +19,11 @@ function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {projects.map((project, index) => (
-            <Link 
-              to={project.link} 
-              key={index} 
-              className="group flex flex-col justify-between p-6 rounded-xl border border-gray-100 dark:border-white/5 bg-white dark:bg-[#111111] shadow-sm hover:shadow-md transition-all duration-300"
-            >
-              <div>
+            
+              <div key={index} className="group cursor-pointer flex flex-col justify-between p-6 rounded-xl border border-gray-100 dark:border-white/5 bg-white dark:bg-[#111111] shadow-sm hover:shadow-md transition-all duration-300"
+                   onClick={() => setSelectedProject(project)}
+>               
+                
                 <div className="flex justify-between items-start mb-3">
                   <h2 className="text-sm font-bold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 transition-colors">
                     {project.title}
@@ -34,10 +36,12 @@ function Projects() {
                   {project.description}
                 </p>
               </div>
-            </Link>
           ))}
         </div>
       </div>
+      <PopupModal  
+        project ={selectedProject}
+        onClose = {()=>{setSelectedProject(null)}}/>
     </div>
   )
 }
